@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding:20px 40px;
+ font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+a{
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+
+}
+*{
+  box-sizing: border-box;
+}
+// .nav-link-container{
+//   margin-top: 20px;
+// }
+span.nav-link{
+  cursor: pointer;
+}
+
+
