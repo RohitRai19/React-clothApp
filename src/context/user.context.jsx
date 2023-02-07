@@ -1,4 +1,4 @@
-// import { onAuthStateChanged } from "firebase/auth";
+import { onAuthStateChanged } from "firebase/auth";
 import { createContext,useEffect,useReducer} from "react";
 import { onAuthStateChangedListener,createUserDocumentFromAuth } from "../utils/firebase/firebase.utlis";
 import { createAction } from "../utils/firebase/reducer/reducer.utils";
@@ -44,7 +44,8 @@ const setCurrentUser = (user)=>{
 const value = {currentUser,setCurrentUser};
 
 
-useEffect(()=>{ const unsubcribe =onAuthStateChangedListener((user)=>{
+useEffect(()=>{ 
+  const unsubcribe =onAuthStateChangedListener((user)=>{
   if(user){
     createUserDocumentFromAuth(user)
   }
