@@ -26,7 +26,7 @@ const Navigation =() =>{
     <Link className="nav-link" to='Shop'>Shop</Link>
   
     { currentUser ?(<span className="nav-link" onClick={signOutUser}> SIGN OUT</span>)
-    :( <Link className="nav-link" to='/auth'>Sing In</Link>)}
+    :( <Link className="nav-link" to='/auth'>Sign In</Link>)}
   
   <CartIcon/>
    </div>
